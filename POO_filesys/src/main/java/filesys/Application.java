@@ -1,7 +1,7 @@
 package filesys;
 
 /**
- * enumeration Application pour lancer le programme.
+ * enumeration Application pour lancer le programme de gestion de fichiers.
  * 
  * @author Ruckebusch - De Verynas
  * @version 1.0
