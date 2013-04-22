@@ -2,7 +2,7 @@ package filesys;
 
 /**
  * enumeration Application pour lancer le programme de gestion de fichiers.
- * 
+ *
  * @author Ruckebusch - De Verynas
  * @version 1.0
  */
@@ -16,7 +16,7 @@ enum Application {
 
     /**
      * Methode d execution utilisant les methodes du code.
-     * 
+     *
      * @param args
      * @throws mesExceptions
      */
@@ -48,7 +48,7 @@ enum Application {
 
     /**
      * Methode principale.
-     * 
+     *
      * @param args
      * @throws mesExceptions
      */

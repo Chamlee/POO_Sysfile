@@ -17,7 +17,7 @@ public class Repertoire extends Element {
 
     /**
      * Constructor for objects of class Repertoire.
-     * 
+     *
      * @param nom
      * @throws mesExceptions
      */
@@ -28,7 +28,6 @@ public class Repertoire extends Element {
 
     /**
      * @return le nom du repertoire.
-     * 
      */
     public String getNom() {
         return super.nom;
@@ -37,7 +36,6 @@ public class Repertoire extends Element {
     /**
      * @return une chaine de caractere pour savoir de quel type est notre
      *         element. Ici un repertoire.
-     * 
      */
     public String getType() {
         return "Repertoire";
@@ -71,7 +69,7 @@ public class Repertoire extends Element {
 
     /**
      * Récupère la taille de element.
-     * 
+     *
      * @return tailleTot un entier pour connaitre la taille du repertoire
      */
     public int getTaille() {
@@ -85,7 +83,7 @@ public class Repertoire extends Element {
 
     /**
      * Cherche egalite de deux elements dans un meme repertoire.
-     * 
+     *
      * @param elem
      * @return test
      */
@@ -103,7 +101,6 @@ public class Repertoire extends Element {
 
     /**
      * @return la liste d element
-     * 
      */
     public List<Element> getElement() {
         return element;
@@ -111,7 +108,7 @@ public class Repertoire extends Element {
 
     /**
      * Cherche les descedant indirect.
-     * 
+     *
      * @param rep
      * @return true or false
      */
@@ -144,7 +141,7 @@ public class Repertoire extends Element {
 
     /**
      * La methode equal est redefini.
-     * 
+     *
      * @return boolean
      */
     @Override

@@ -12,7 +12,7 @@ public class mesExceptions extends Exception {
 
     /**
      * Constructor for objects of class mesExceptions.
-     * 
+     *
      * @param message
      */
     public mesExceptions(String message) {

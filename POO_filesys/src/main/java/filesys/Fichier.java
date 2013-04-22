@@ -2,7 +2,7 @@ package filesys;
 
 /**
  * Classe fichier qui herite d un element.
- * 
+ *
  * @author Ruckebusch - De Verynas
  * @version 1.0
  * @see Element
@@ -14,7 +14,7 @@ public class Fichier extends Element {
 
     /**
      * Constructor for objects of class Fichier.
-     * 
+     *
      * @param nom
      * @param taille
      * @throws mesExceptions
@@ -34,7 +34,6 @@ public class Fichier extends Element {
 
     /**
      * @return un entier pour connaitre la taille du fichier.
-     * 
      */
 
     public int getTaille() {
@@ -44,7 +43,6 @@ public class Fichier extends Element {
     /**
      * @return une chaine de caractere pour savoir de quel type est notre
      *         element. Ici un fichier.
-     * 
      */
 
     public String getType() {
