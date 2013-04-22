@@ -2,7 +2,7 @@ package filesys;
 
 /**
  * Classe element qui regroupe les elements du systeme de fichiers.
- * 
+ *
  * @author Ruckebusch - De Veyrinas
  * @version 1.0
  */
@@ -12,7 +12,7 @@ public abstract class Element {
 
     /**
      * Constructor for objects of class Element.
-     * 
+     *
      * @param parNom
      * @throws mesExceptions
      */
@@ -27,15 +27,13 @@ public abstract class Element {
 
     /**
      * Methode abstraite.
-     * 
+     *
      * @return un entier pour connaitre la taille de l element.
-     * 
      */
     public abstract int getTaille();
 
     /**
      * @return une chaine de caractere pour connaitre le nom de l element.
-     * 
      */
     public String getNom() {
         return nom;
@@ -44,7 +42,6 @@ public abstract class Element {
     /**
      * @return une chaine de caractere pour savoir de quel type est notre
      *         element.
-     * 
      */
     public abstract String getType();
 
@@ -62,7 +59,7 @@ public abstract class Element {
 
     /**
      * Redefinissions de la methode equals().
-     * 
+     *
      * @return true or false
      * @see java.lang.Object#equals(java.lang.Object)
      */

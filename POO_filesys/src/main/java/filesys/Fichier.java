@@ -53,7 +53,7 @@ public class Fichier extends Element {
 
     @Override
     public String toString() {
-        return super.nom+taille;
+        return super.nom+" "+taille;
     }
 
 }

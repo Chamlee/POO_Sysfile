@@ -6,7 +6,11 @@ import org.junit.Test;
 
 public class RepertoireTests {
 
-	
+	/**
+	 * Verifie que le nom rentre est bien celui enregistre.
+	 * 
+	 * @throws mesExceptions
+	 */
 	@Test
 	public void testNom() throws mesExceptions {
 		String nom = "dossier";
@@ -14,6 +18,13 @@ public class RepertoireTests {
 		Assert.assertEquals(nom, rep.getNom());
 	}
 
+	
+	/**
+	 * Test l ajout dans les repertoires et verification d elements
+	 * differents.
+	 * 
+	 * @throws mesExceptions
+	 */
 	@Test
 	public void testAjoutRepDansRep() throws mesExceptions {
 		Repertoire racine = new Repertoire("racine");
@@ -23,7 +34,11 @@ public class RepertoireTests {
 		racine.ajoutElement(sousdossier);
 	}
 
-
+	/**
+	 * Verifie la taille du fichier.
+	 * 
+	 * @throws mesExceptions
+	 */
 	@Test
 	public void testTaille() throws mesExceptions {
 		String nom = "fic1";
@@ -31,7 +46,12 @@ public class RepertoireTests {
 		Fichier fic = new Fichier(nom, taille);
 		Assert.assertEquals(taille, fic.getTaille());
 	}
-
+	
+	/**
+	 * Verifie la presence de doublons dans les repertoires.
+	 * 
+	 * @throws mesExceptions
+	 */
 	@Test
 	public void testNomDansRep() throws mesExceptions {
 		
@@ -46,7 +66,11 @@ public class RepertoireTests {
 		
 	}
 	
-	
+	/**
+	 * Verifie la taille de l arborescence de fichier.
+	 * 
+	 * @throws mesExceptions
+	 */
 	@Test
 	public void testTailleArbo() throws mesExceptions {
 
@@ -62,7 +86,11 @@ public class RepertoireTests {
 		Assert.assertEquals(120, racine.getTaille());
 	}
 	
-	
+	/**
+	 * Verifier toute l arborescence lors d ajout de fichiers
+	 * 
+	 * @throws mesExceptions
+	 */
 	@Test
 	public void testRepIndirect() throws mesExceptions {
 		Repertoire racine = new Repertoire("repertoire1");
@@ -72,6 +100,11 @@ public class RepertoireTests {
 		Assert.assertFalse(sousdossier.ajoutElement(racine));
 	}
 	
+	/**
+	 * Test ajout d un element dans lui meme
+	 * 
+	 * @throws mesExceptions
+	 */
 	@Test
 	public void testAjoutObjet() throws mesExceptions {
 
@@ -80,6 +113,11 @@ public class RepertoireTests {
 		Assert.assertFalse(racine.ajoutElement(racine));
 	}
 	
+	/**
+	 * Test les cas de reference nulle
+	 * 
+	 * @throws mesExceptions
+	 */
 	@Test
 	public void referenceNulle() throws mesExceptions {
 		
