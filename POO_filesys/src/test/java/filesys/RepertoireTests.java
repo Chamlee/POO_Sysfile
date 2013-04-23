@@ -1,16 +1,18 @@
 package filesys;
 
 import junit.framework.Assert;
+import junit.framework.TestCase;
 
 import org.junit.Test;
 
-public class RepertoireTests {
+public class RepertoireTests extends TestCase{
 
 	/**
 	 * Verifie que le nom rentre est bien celui enregistre.
 	 * 
 	 * @throws mesExceptions
 	 */
+    
 	@Test
 	public void testNom() throws mesExceptions {
 		String nom = "dossier";
@@ -25,6 +27,7 @@ public class RepertoireTests {
 	 * 
 	 * @throws mesExceptions
 	 */
+	
 	@Test
 	public void testAjoutRepDansRep() throws mesExceptions {
 		Repertoire racine = new Repertoire("racine");
@@ -39,6 +42,7 @@ public class RepertoireTests {
 	 * 
 	 * @throws mesExceptions
 	 */
+	
 	@Test
 	public void testTaille() throws mesExceptions {
 		String nom = "fic1";
@@ -52,6 +56,7 @@ public class RepertoireTests {
 	 * 
 	 * @throws mesExceptions
 	 */
+	
 	@Test
 	public void testNomDansRep() throws mesExceptions {
 		
@@ -61,9 +66,7 @@ public class RepertoireTests {
 		
 		racine.ajoutElement(fic1);
 		
-		Assert.assertFalse(racine.ajoutElement(fic2));
-		
-		
+		Assert.assertFalse(racine.ajoutElement(fic2));	
 	}
 	
 	/**
@@ -71,6 +74,7 @@ public class RepertoireTests {
 	 * 
 	 * @throws mesExceptions
 	 */
+	
 	@Test
 	public void testTailleArbo() throws mesExceptions {
 
@@ -91,6 +95,7 @@ public class RepertoireTests {
 	 * 
 	 * @throws mesExceptions
 	 */
+	
 	@Test
 	public void testRepIndirect() throws mesExceptions {
 		Repertoire racine = new Repertoire("repertoire1");
@@ -105,6 +110,7 @@ public class RepertoireTests {
 	 * 
 	 * @throws mesExceptions
 	 */
+	
 	@Test
 	public void testAjoutObjet() throws mesExceptions {
 
@@ -118,6 +124,7 @@ public class RepertoireTests {
 	 * 
 	 * @throws mesExceptions
 	 */
+	
 	@Test
 	public void referenceNulle() throws mesExceptions {
 		

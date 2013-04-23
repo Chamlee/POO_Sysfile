@@ -61,7 +61,6 @@
                 <version>2.4.3</version>
                 <configuration>
                     <aggregate>true</aggregate>
-                    <linkXRef>true</linkXRef>
                     <showSuccess>true</showSuccess>
                 </configuration>
             </plugin>
