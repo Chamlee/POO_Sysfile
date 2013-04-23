@@ -11,5 +11,6 @@ Fichier .gitignore pour ignorer le dossier target
 Fichier pom.xml
 
 mvn package génère le .jar du projet
+
 mvn site génère javadoc , rapports checkctyle et findbugs
 (soucis sur les rapports de test unitaires)
