@@ -12,7 +12,6 @@ public class RepertoireTests extends TestCase{
 	 * 
 	 * @throws mesExceptions
 	 */
-    
 	@Test
 	public void testNom() throws mesExceptions {
 		String nom = "dossier";
@@ -27,7 +26,6 @@ public class RepertoireTests extends TestCase{
 	 * 
 	 * @throws mesExceptions
 	 */
-	
 	@Test
 	public void testAjoutRepDansRep() throws mesExceptions {
 		Repertoire racine = new Repertoire("racine");
